@@ -64,4 +64,30 @@ resource "aws_iam_group_membership" "team1" {
   group = aws_iam_group.kaizen1.name
 }
 
+resource "aws_iam_user" "lb9" {
+  name = "miyeon"
+}
 
+resource "aws_iam_user" "lb10" {
+  name = "mina"
+}
+
+resource "aws_iam_group_membership" "team2" {
+  name = "tf-testing-group-membership"
+
+  users = [
+    aws_iam_user.lb9.name
+  ]
+
+  group = aws_iam_group.kaizen.name
+}
+
+resource "aws_iam_group_membership" "team3" {
+  name = "tf-testing-group-membership"
+
+  users = [
+    aws_iam_user.lb10.name,
+  ]
+
+  group = aws_iam_group.kaizen1.name
+}
