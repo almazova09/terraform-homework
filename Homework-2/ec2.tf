@@ -33,7 +33,7 @@ resource "aws_instance" "web3" {
   user_data = file("apache.sh")
 
   tags = {
-    Name = "web-2"
+    Name = "web-3"
   }
 }
 
