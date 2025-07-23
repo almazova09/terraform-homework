@@ -1,10 +1,8 @@
 resource "aws_vpc" "main" {
   cidr_block = var.vpc.cidr
 
-  tags = {
-    Name = "kaizen"
-
-  }
+  tags = local.common_tags
+  
 }
 
 resource "aws_subnet" "main" {
