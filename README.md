@@ -23,4 +23,4 @@ port = [22, 80, 443, 3306]
 ec2_web = {
     ami_id = "ami-0cbbe2c6a1bb2ad63"
     type = "t2.micro"
-}# terraform-homework
+}
