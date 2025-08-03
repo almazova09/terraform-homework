@@ -1,8 +1,13 @@
 resource "aws_vpc" "main" {
   cidr_block = var.vpc.cidr
+<<<<<<< HEAD
   
   tags = local.common_tags
   
+=======
+
+  tags = local.common_tags
+>>>>>>> 3792baaeb7a8e834a897c40538cf2d7c6e073f2a
 }
 
 resource "aws_subnet" "main" {
